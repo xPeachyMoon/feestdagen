@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Christmast landscape</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="circle center">
+                <div class="rondje center">
+                    <div class="text">
+                        <p>Fijne feestdagen & een gelukkig nieuwjaar -</p>
+                    </div>
+                </div>
+                <script>
+                    const text = document.querySelector('.text p');
+                    text.innerHTML = text.innerText.split('').map(
+                        (char, i) =>
+                        `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+                    ).join('');
+                </script>
+
+                <div class="snow_falling"></div>
+                <div class="snow_falling2"></div>
+                <div class="snow_floor"></div>
+
+                
+                <div class="falling_star">
+                    <div class="star"></div>
+                </div>
+
+                <div class="house">
+                    <div class="wall"></div>
+                    <div class="roof"></div>
+                    <div class="smoke">
+                        <span style="--i:1"></span>
+                        <span style="--i:3"></span>
+                        <span style="--i:6"></span>
+                        <span style="--i:5"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:7"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:8"></span>
+                        <span style="--i:2"></span>
+                        <span style="--i:4"></span>
+                        <span style="--i:9"></span>
+                    </div>
+                    <div class="chimney"></div>
+                    <div class="roof_sides"></div>
+                    <div class="door"></div>
+                    <div class="door_snow"></div>
+                    <div class="window"></div>
+                    <div class="window_round"></div>
+                </div>
+
+                <div class="tree_1 center">
+                    <div class="trunk center"></div>
+                    <div class="leaves_1 center"></div>
+                    <div class="leaves_2 center"></div>
+                    <div class="leaves_3 center"></div>
+                </div>
+
+                <div class="tree_2 center">
+                    <div class="trunk center"></div>
+                    <div class="leaves_1 center"></div>
+                    <div class="leaves_2 center"></div>
+                    <div class="leaves_3 center"></div>
+                </div>
+
+                <div class="snowman">
+                    <div class="face"></div>
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                    <div class="buttons"></div>
+                    <div class="arm right"></div>
+                    <div class="arm left"></div>
+                    <div class="shadow"></div>
+                </div>
+
+                <div class="stand">
+                    <div class="stand_shadow"></div>
+                    <div class="stand_highlight"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
